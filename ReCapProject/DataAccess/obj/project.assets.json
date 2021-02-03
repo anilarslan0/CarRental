@@ -201,11 +201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anlar\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "D:\\github\\Car-Project-OOP\\ReCapProject\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\anlar\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj",
+      "projectPath": "D:\\github\\Car-Project-OOP\\ReCapProject\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\anlar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anlar\\source\\repos\\ReCapProject\\DataAccess\\obj\\",
+      "outputPath": "D:\\github\\Car-Project-OOP\\ReCapProject\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\anlar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -222,8 +222,8 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\anlar\\source\\repos\\ReCapProject\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\anlar\\source\\repos\\ReCapProject\\Entities\\Entities.csproj"
+            "D:\\github\\Car-Project-OOP\\ReCapProject\\Entities\\Entities.csproj": {
+              "projectPath": "D:\\github\\Car-Project-OOP\\ReCapProject\\Entities\\Entities.csproj"
             }
           }
         }

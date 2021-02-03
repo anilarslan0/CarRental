@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l+Jaof6WjcJ6Eoj3EiMemVFGGQCW15sZ2QTItdU3kpB4mcT/+uRQweoPAlOvY0B4obfp/uVqc9aUf1f4hmKiKw==",
+  "dgSpecHash": "YzS7d3cCwbUlLV6/uYYfzU9edD4sjXv/Gcq0+ElvQxqie84kMnDguOP27/4bfJ/EVh/15AYo/nbeJVcjkXVcFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\anlar\\source\\repos\\ReCapProject\\Business\\Business.csproj",
+  "projectFilePath": "D:\\github\\Car-Project-OOP\\ReCapProject\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anlar\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\anlar\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

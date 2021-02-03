@@ -10,3 +10,15 @@ C:\Users\anlar\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\Dat
 C:\Users\anlar\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
 C:\Users\anlar\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
 C:\Users\anlar\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+D:\github\Car-Project-OOP\ReCapProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+D:\github\Car-Project-OOP\ReCapProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+D:\github\Car-Project-OOP\ReCapProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+D:\github\Car-Project-OOP\ReCapProject\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+D:\github\Car-Project-OOP\ReCapProject\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+D:\github\Car-Project-OOP\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+D:\github\Car-Project-OOP\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+D:\github\Car-Project-OOP\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+D:\github\Car-Project-OOP\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\github\Car-Project-OOP\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+D:\github\Car-Project-OOP\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+D:\github\Car-Project-OOP\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb

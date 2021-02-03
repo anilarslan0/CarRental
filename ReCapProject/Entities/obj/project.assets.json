@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anlar\\source\\repos\\ReCapProject\\Entities\\Entities.csproj",
+      "projectUniqueName": "D:\\github\\Car-Project-OOP\\ReCapProject\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\anlar\\source\\repos\\ReCapProject\\Entities\\Entities.csproj",
+      "projectPath": "D:\\github\\Car-Project-OOP\\ReCapProject\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\anlar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anlar\\source\\repos\\ReCapProject\\Entities\\obj\\",
+      "outputPath": "D:\\github\\Car-Project-OOP\\ReCapProject\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\anlar\\AppData\\Roaming\\NuGet\\NuGet.Config",

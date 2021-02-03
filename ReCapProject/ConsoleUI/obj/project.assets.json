@@ -71,11 +71,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anlar\\source\\repos\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj",
+      "projectUniqueName": "D:\\github\\Car-Project-OOP\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj",
       "projectName": "ConsoleUI",
-      "projectPath": "C:\\Users\\anlar\\source\\repos\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj",
+      "projectPath": "D:\\github\\Car-Project-OOP\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj",
       "packagesPath": "C:\\Users\\anlar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anlar\\source\\repos\\ReCapProject\\ConsoleUI\\obj\\",
+      "outputPath": "D:\\github\\Car-Project-OOP\\ReCapProject\\ConsoleUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\anlar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -92,14 +92,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\anlar\\source\\repos\\ReCapProject\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\anlar\\source\\repos\\ReCapProject\\Business\\Business.csproj"
+            "D:\\github\\Car-Project-OOP\\ReCapProject\\Business\\Business.csproj": {
+              "projectPath": "D:\\github\\Car-Project-OOP\\ReCapProject\\Business\\Business.csproj"
             },
-            "C:\\Users\\anlar\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\anlar\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj"
+            "D:\\github\\Car-Project-OOP\\ReCapProject\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "D:\\github\\Car-Project-OOP\\ReCapProject\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\anlar\\source\\repos\\ReCapProject\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\anlar\\source\\repos\\ReCapProject\\Entities\\Entities.csproj"
+            "D:\\github\\Car-Project-OOP\\ReCapProject\\Entities\\Entities.csproj": {
+              "projectPath": "D:\\github\\Car-Project-OOP\\ReCapProject\\Entities\\Entities.csproj"
             }
           }
         }
