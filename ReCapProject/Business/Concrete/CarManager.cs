@@ -15,6 +15,19 @@ namespace Business.Concrete
         {
             _carDal = carDal;
         }
+
+        public void Add(Car car)
+        {
+            if (car.CarName.Length>=2 && car.DailyPrice>0)
+            {
+                _carDal.Add(car);
+            }
+            else
+            {
+                Console.WriteLine("Arabanızın Adını ve Günlük Ücretini Lütfen Kontrol Ediniz");
+            }
+        }
+
         public List<Car> GetAll()
         {
             return _carDal.GetAll();
