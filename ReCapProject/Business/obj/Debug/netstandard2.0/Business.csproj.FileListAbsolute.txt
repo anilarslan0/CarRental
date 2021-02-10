@@ -26,3 +26,5 @@ D:\github\Car-Project-OOP\ReCapProject\Business\obj\Debug\netstandard2.0\Busines
 D:\github\Car-Project-OOP\ReCapProject\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete
 D:\github\Car-Project-OOP\ReCapProject\Business\obj\Debug\netstandard2.0\Business.dll
 D:\github\Car-Project-OOP\ReCapProject\Business\obj\Debug\netstandard2.0\Business.pdb
+D:\github\Car-Project-OOP\ReCapProject\Business\bin\Debug\netstandard2.0\Core.dll
+D:\github\Car-Project-OOP\ReCapProject\Business\bin\Debug\netstandard2.0\Core.pdb

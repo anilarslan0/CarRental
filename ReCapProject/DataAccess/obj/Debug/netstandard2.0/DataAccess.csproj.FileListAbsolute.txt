@@ -22,3 +22,5 @@ D:\github\Car-Project-OOP\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataA
 D:\github\Car-Project-OOP\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
 D:\github\Car-Project-OOP\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
 D:\github\Car-Project-OOP\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+D:\github\Car-Project-OOP\ReCapProject\DataAccess\bin\Debug\netstandard2.0\Core.dll
+D:\github\Car-Project-OOP\ReCapProject\DataAccess\bin\Debug\netstandard2.0\Core.pdb
