@@ -9,12 +9,28 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-           
+            CarDetailTest();
+
+            //RentalManager rentalManager = new RentalManager(new EfRentalDal());
+            //var result = rentalManager.GetAll();
+            //if (result.Success==true)
+            //{
+            //    foreach (var rent in result.Data)
+            //    {
+            //        Console.WriteLine(rent.CustomerId,rent.RentDate,rent.ReturnDate);
+            //    }
+            //}
+
+
+        }
+
+        private static void CarDetailTest()
+        {
             CarManager carManager = new CarManager(new EfCarDal());
 
             var result = carManager.GetCarDetail();
 
-            if (result.Success==true)
+            if (result.Success == true)
             {
                 foreach (var car in result.Data)
                 {
@@ -25,11 +41,6 @@ namespace ConsoleUI
             {
                 Console.WriteLine(result.Message);
             }
-
-
-           
-
-            
         }
     }
 }

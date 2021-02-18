@@ -80,3 +80,6 @@ D:\github\Car-Project-OOP\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\runtime
 D:\github\Car-Project-OOP\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\github\Car-Project-OOP\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Core.dll
 D:\github\Car-Project-OOP\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Core.pdb
+D:\github\Car-Project-OOP\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.dll
+D:\github\Car-Project-OOP\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+D:\github\Car-Project-OOP\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Castle.Core.dll

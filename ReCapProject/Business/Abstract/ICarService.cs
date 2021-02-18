@@ -21,6 +21,8 @@ namespace Business.Abstract
 
        IDataResult<List<Car>> GetAllByColorId(int Id);
 
+        
+
 
 
     }
