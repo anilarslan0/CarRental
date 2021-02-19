@@ -53,5 +53,18 @@ namespace WepAPI.Controllers
             }
             return BadRequest(result);
         }
+
+        [HttpPost("update")]
+
+        public IActionResult Update(User user)
+        {
+            var result = _userService.Update(user);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
     }
 }
