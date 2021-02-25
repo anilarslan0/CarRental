@@ -16,6 +16,8 @@ namespace Business.Abstract
         IResult Delete(Rental rental);
         IResult Add(Rental rental);
 
+        IDataResult<List<RentCarDetailDto>> GetAllDetail();
+
 
 
 

@@ -1,6 +1,7 @@
 ﻿using Business.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
+using Entities.Concrete;
 using System;
 
 namespace ConsoleUI
@@ -21,6 +22,27 @@ namespace ConsoleUI
             //    }
             //}
 
+            RentalManager rentalManager = new RentalManager(new EfRentalDal());
+            var result = rentalManager.GetAllDetail();
+
+            if (result.Success == true)
+            {
+                foreach (var carDetail in result.Data)
+                {
+                    Console.WriteLine("kiralayan : "+ carDetail.CustomerName + "araba : " +carDetail.CarName);
+                }
+            }
+
+            //var result2 = rentalManager.Add(new Rental()
+            //{
+            //    CarId = 1,
+            //    CustomerId = 1,
+            //    RentDate = DateTime.Now,
+            //    ReturnDate = DateTime.Now
+
+            //});
+
+           
 
         }
 
