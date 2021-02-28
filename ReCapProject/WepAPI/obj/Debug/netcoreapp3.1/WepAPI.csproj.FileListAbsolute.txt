@@ -71,3 +71,5 @@ D:\github\Car-Project-OOP\ReCapProject\WepAPI\bin\Debug\netcoreapp3.1\Autofac.Ex
 D:\github\Car-Project-OOP\ReCapProject\WepAPI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
 D:\github\Car-Project-OOP\ReCapProject\WepAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
 D:\github\Car-Project-OOP\ReCapProject\WepAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
+D:\github\Car-Project-OOP\ReCapProject\WepAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+D:\github\Car-Project-OOP\ReCapProject\WepAPI\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll

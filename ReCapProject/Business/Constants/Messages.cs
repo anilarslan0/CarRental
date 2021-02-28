@@ -34,6 +34,6 @@ namespace Business.Constants
 
         public static string MaintenanceTime = "Site Bakımda";
 
-
+        public static string FailAddedImageLimit = "Fotoğraf Sınırı Aşıldı";
     }
 }
