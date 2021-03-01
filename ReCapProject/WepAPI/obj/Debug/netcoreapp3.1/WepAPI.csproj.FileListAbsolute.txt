@@ -73,3 +73,4 @@ D:\github\Car-Project-OOP\ReCapProject\WepAPI\bin\Debug\netcoreapp3.1\Castle.Cor
 D:\github\Car-Project-OOP\ReCapProject\WepAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
 D:\github\Car-Project-OOP\ReCapProject\WepAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
 D:\github\Car-Project-OOP\ReCapProject\WepAPI\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+D:\github\Car-Project-OOP\ReCapProject\WepAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

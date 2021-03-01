@@ -35,5 +35,16 @@ namespace Business.Constants
         public static string MaintenanceTime = "Site Bakımda";
 
         public static string FailAddedImageLimit = "Fotoğraf Sınırı Aşıldı";
+
+        public static string CategoryLimitExceded = "Kategori limiti aşıma uğradığından yeni ürün eklenemedi";
+        public static string AuthorizationDenied = "Yetkiniz yok";
+        public static string UserRegistered = "Kullanıcı başarıyla kaydedildi";
+        public static string PasswordError = "Şifre Hatalı";
+        public static string SuccessfulLogin = "Sisteme giriş başarılı";
+        public static string UserAlreadyExists = "Bu kullanıcı zaten mevcut";
+        public static string AccessTokenCreated = "Access token başarıyla oluşturuldu";
+        public static string UserNotFound = "Kullanıcı bulunamadı";
+
+
     }
 }
