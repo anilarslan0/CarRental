@@ -8,19 +8,9 @@ using System.Text;
 
 namespace Business.Abstract
 {
-    public interface IRentalService
+    public interface IRentalService : IBaseBusinessService<Rental>
     {
-        IDataResult<List<Rental>> GetAll();
         IDataResult<Rental> GetByRentalId(int rentalId);
-        IResult Update(Rental rental);
-        IResult Delete(Rental rental);
-        IResult Add(Rental rental);
-
         IDataResult<List<RentCarDetailDto>> GetAllDetail();
-
-
-
-
-
     }
 }
