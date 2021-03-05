@@ -1,7 +1,9 @@
 ﻿using Business.Abstract;
+using Business.BusinnesAspects.AutoFac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
+using Core.CrossCuttingConcern.Caching.Microsoft;
 using Core.CrossCuttingConcern.Validation;
 using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.Concrete;
@@ -22,8 +24,9 @@ namespace Business.Concrete
         {
             _carDal = carDal;
         }
-
+        [SecuredOperation("product.add,admin")]
         [ValidationAspect(typeof(CarValidator))]
+        [CacheRemoveAspect("IProductService.Get")]
         public IResult Add(Car car)
         {
             ValidationTool.Validate(new CarValidator(), car);
