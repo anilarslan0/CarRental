@@ -17,7 +17,7 @@ namespace WepAPI.Controllers
 
         public RentalsController(IRentalService rentalService)
         {
-            rentalService = _rentalService;
+            _rentalService = rentalService;
         }
 
         [HttpGet("getall")]
@@ -59,6 +59,16 @@ namespace WepAPI.Controllers
         public IActionResult Update(Rental rental)
         {
             var result = _rentalService.Update(rental);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+        [HttpGet("GetRentalDetails")]
+        public IActionResult GetRentalDetails()
+        {
+            var result = _rentalService.GetAllDetail();
             if (result.Success)
             {
                 return Ok(result);

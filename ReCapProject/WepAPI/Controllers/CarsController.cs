@@ -79,5 +79,16 @@ namespace WepAPI.Controllers
             return BadRequest(result);
         }
 
+        [HttpGet("GetCarDetails")]
+        public IActionResult GetCarDetails()
+        {
+            var result = _carService.GetCarDetail();
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
     }
 }

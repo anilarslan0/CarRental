@@ -57,6 +57,7 @@ namespace WepAPI
 
             //services.AddSingleton<IRentalService,RentalManager>();
             //services.AddSingleton<IRentalDal,EfRentalDal>();
+            services.AddCors();    
 
             var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
 
@@ -87,6 +88,7 @@ namespace WepAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors(builder => builder.WithOrigins("https://localhost:44323").AllowAnyHeader().AllowAnyOrigin());
 
             app.UseHttpsRedirection();
 
