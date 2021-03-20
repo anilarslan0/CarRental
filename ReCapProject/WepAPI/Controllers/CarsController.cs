@@ -35,9 +35,21 @@ namespace WepAPI.Controllers
 
         [HttpGet("getbyid")]
 
-        public IActionResult GetById(int id)
+        public IActionResult GetById(int carId)
         {
-            var result = _carService.GetbyCarId(id);
+            var result = _carService.GetbyCarId(carId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpGet("getdetailbyid")]
+
+        public IActionResult GetDetails(int carId)
+        {
+            var result = _carService.GetDetails(carId);
             if (result.Success)
             {
                 return Ok(result);

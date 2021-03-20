@@ -54,7 +54,7 @@ namespace Business.Concrete
 
         public IDataResult<List<CarDetailDto>> GetAllByColorId(int Id)
         {
-            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetByBrandIdCarDetails(Id));
+            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetByColorIdCarDetails(Id));
         }
 
         public IDataResult<Car> GetbyCarId(int carId)
@@ -65,6 +65,11 @@ namespace Business.Concrete
         public IDataResult<List<CarDetailDto>> GetCarDetail()
         {
             return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails());
+        }
+
+        public IDataResult<CarDetailDto> GetDetails(int carId)
+        {
+            return new SuccessDataResult<CarDetailDto>(_carDal.GetDetails(carId));
         }
 
         public IResult Update(Car car)

@@ -30,16 +30,41 @@ namespace DataAccess.Concrete.EntityFramework
                                  CarName=c.CarName,
                                  BrandName = b.BrandName,
                                  ColorName = r.ColorName,
-                                 DailyPrice = c.DailyPrice
+                                 DailyPrice = c.DailyPrice,
+                                 
                              };
                 return result.ToList();
+            }
+        }
+
+        public CarDetailDto GetDetails(int carId)
+        {
+            using (CarDbContext context = new CarDbContext())
+            {
+                var result = from c in context.Cars.Where(c=>c.CarId==carId)
+                             join r in context.Colors
+                             on
+                             c.ColorId equals r.ColorId
+                             join b in context.Brands
+                             on
+                             c.BrandId equals b.BrandId
+                             select new CarDetailDto
+                             {
+                                 CarId = c.CarId,
+                                 CarName = c.CarName,
+                                 BrandName = b.BrandName,
+                                 ColorName = r.ColorName,
+                                 DailyPrice = c.DailyPrice,
+
+                             };
+                return result.SingleOrDefault();
             }
         }
         public List<CarDetailDto> GetByBrandIdCarDetails(int brandId)
         {
             using (CarDbContext context = new CarDbContext())
             {
-                var result = from c in context.Cars
+                var result = from c in context.Cars.Where(c=>c.BrandId==brandId)
                              join r in context.Colors
                              on
                              c.ColorId equals r.ColorId
@@ -65,7 +90,7 @@ namespace DataAccess.Concrete.EntityFramework
         {
             using (CarDbContext context = new CarDbContext())
             {
-                var result = from c in context.Cars
+                var result = from c in context.Cars.Where(c=>c.ColorId==colorId)
                              join r in context.Colors
                              on
                              c.ColorId equals r.ColorId                            
