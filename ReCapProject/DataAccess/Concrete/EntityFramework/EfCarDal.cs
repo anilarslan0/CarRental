@@ -31,7 +31,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  BrandName = b.BrandName,
                                  ColorName = r.ColorName,
                                  DailyPrice = c.DailyPrice,
-                                 
+                                 ModelYear = c.ModelYear
                              };
                 return result.ToList();
             }
@@ -55,6 +55,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  BrandName = b.BrandName,
                                  ColorName = r.ColorName,
                                  DailyPrice = c.DailyPrice,
+                                 ModelYear = c.ModelYear
 
                              };
                 return result.SingleOrDefault();
@@ -79,7 +80,9 @@ namespace DataAccess.Concrete.EntityFramework
                                  CarName = c.CarName,
                                  BrandName = b.BrandName,
                                  ColorName = r.ColorName,
-                                 DailyPrice = c.DailyPrice
+                                 DailyPrice = c.DailyPrice,
+                                 ModelYear = c.ModelYear
+
                              };
                 return result.ToList();
             }
