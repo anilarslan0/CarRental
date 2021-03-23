@@ -13,7 +13,7 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(p => p.CarName).NotEmpty();
             RuleFor(p => p.CarName).MinimumLength(2);
             RuleFor(p => p.DailyPrice).GreaterThan(0);
-            RuleFor(p => p.DailyPrice).GreaterThanOrEqualTo(100000).When(p => p.CarName == "Mercedes").WithMessage("Mercedes Daha pahalı olmalı.");
+            RuleFor(p => p.DailyPrice).GreaterThanOrEqualTo(100).When(p => p.CarName == "Mercedes").WithMessage("Mercedes Daha pahalı olmalı.");
            // RuleFor(p => p.CarName).Must(StartWithUpper);
         }
 
