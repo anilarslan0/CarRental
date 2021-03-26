@@ -8,6 +8,6 @@ namespace Business.Abstract
 {
     public interface IBrandService:IBaseBusinessService<Brand>
     {
-             
+        IDataResult<Brand> GetById(int brandId);
     }
 }

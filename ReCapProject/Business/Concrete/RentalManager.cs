@@ -25,6 +25,11 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
+        public IDataResult<Rental> Add(RentCarDetailDto rentCarDetailDto)
+        {
+            throw new NotImplementedException();
+        }
+
         public IResult Delete(Rental rental)
         {
             _rentalDal.Delete(rental);
@@ -41,12 +46,20 @@ namespace Business.Concrete
             return new SuccessDataResult<List<RentCarDetailDto>>(_rentalDal.GetRentalDetails());
         }
 
+        public IDataResult<List<RentCarDetailDto>> GetAllDto()
+        {
+            throw new NotImplementedException();
+        }
+
         public IDataResult<Rental> GetByRentalId(int rentalId)
         {
             return new SuccessDataResult<Rental>(_rentalDal.Get(r => r.RentalId == rentalId));
         }
 
-
+        public IDataResult<List<Rental>> GetListReturnDateIsNull()
+        {
+            throw new NotImplementedException();
+        }
 
         public IResult Update(Rental rental)
         {
