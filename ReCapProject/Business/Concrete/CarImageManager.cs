@@ -33,28 +33,28 @@ namespace Business.Concrete
             {
                 return result;
             }
-            carImage.ImagePath = FileHelper.AddAsync(file);
+            carImage.ImagePath = Filehelper.AddAsync(file);
             carImage.Date = DateTime.Now;
             _carImageDal.Add(carImage);
             return new SuccessResult();
 
         }
-        [ValidationAspect(typeof(CarImageValidator))]
-        public IResult Delete(CarImage carImage)
-        {
+        //[ValidationAspect(typeof(CarImageValidator))]
+        //public IResult Delete(CarImage carImage)
+        //{
 
-            IResult result = BusinessRules.Run(
-                CarImageDelete(carImage),
-                FileHelper.DeleteAsync(_carImageDal.Get(p => p.Id == carImage.Id).ImagePath));
+        //    IResult result = BusinessRules.Run(
+        //        CarImageDelete(carImage),
+        //        Filehelper.DeleteAsync(_carImageDal.Get(p => p.Id == carImage.Id).ImagePath));
 
-            if (result != null)
-            {
-                return result;
-            }
+        //    if (result != null)
+        //    {
+        //        return result;
+        //    }
 
-            _carImageDal.Delete(carImage);
-            return new SuccessResult();
-        }
+        //    _carImageDal.Delete(carImage);
+        //    return new SuccessResult();
+        //}
 
         public IDataResult<CarImage> Get(int id)
         {
@@ -70,10 +70,10 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<List<CarImage>>(CheckIfCarImageNull(id));
         }
-        [ValidationAspect(typeof(CarImageValidator))]
+        //[ValidationAspect(typeof(CarImageValidator))]
         public IResult Update(IFormFile file, CarImage carImage)
         {
-            carImage.ImagePath = FileHelper.UpdateAsync(_carImageDal.Get(p => p.Id == carImage.Id).ImagePath, file);
+            carImage.ImagePath = Filehelper.UpdateAsync(_carImageDal.Get(p => p.Id == carImage.Id).ImagePath, file);
             carImage.Date = DateTime.Now;
             _carImageDal.Update(carImage);
             return new SuccessResult();
@@ -119,7 +119,10 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
-    
+        public IResult Delete(CarImage carImage)
+        {
+            throw new NotImplementedException();
+        }
     }
     }
 

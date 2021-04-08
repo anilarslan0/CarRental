@@ -8,8 +8,9 @@ using System.Text;
 
 namespace Core.Utilities.FileHelper
 {
-    public class FileHelper
+    public class Filehelper
     {
+
         public static string AddAsync(IFormFile file)
         {
 
@@ -18,58 +19,80 @@ namespace Core.Utilities.FileHelper
                 using (var stream = new FileStream(sourcepath, FileMode.Create))
                     file.CopyTo(stream);
 
-            var result = newPath(file);
 
-            File.Move(sourcepath, result);
+            var newGuidName = newGuid(file);
+
+            var imagePathResult = newPath(newGuidName);
+
+            File.Move(sourcepath, imagePathResult);
+
+            var result = newPathForImage(newGuidName);
 
             return result;
         }
 
         public static string UpdateAsync(string sourcePath, IFormFile file)
         {
-            var result = newPath(file);
+            var newGuidName = newGuid(file);
 
-            File.Copy(sourcePath, result);
+            var imagePathResult = newPath(newGuidName);
+
+            File.Move(sourcePath, imagePathResult);
+
+            var result = newPathForImage(newGuidName);
+
+            //File.Copy(sourcePath,result);
+
+            if (sourcePath.Length > 0)
+            {
+                using (var stream = new FileStream(result, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                }
+            }
 
             File.Delete(sourcePath);
 
             return result;
         }
 
-
-        public static IResult DeleteAsync(string path)
+        public static void DeleteAsync(string path)
         {
-            try
-            {
-                File.Delete(path);
-            }
-            catch (Exception exception)
-            {
-                return new ErrorResult(exception.Message);
-            }
-
-            return new SuccessResult();
+            File.Delete(path);
         }
 
-        public static string newPath(IFormFile file)
+        public static string newPath(string guid)
         {
-            System.IO.FileInfo ff = new System.IO.FileInfo(file.FileName);
-            string fileExtension = ff.Extension;
 
-            var creatingUniqueFilename = Guid.NewGuid().ToString("D")
-               + "-" + DateTime.Now.Month + "-"
-               + DateTime.Now.Day + "-"
-               + DateTime.Now.Year + fileExtension;
-
-            string path = Path.Combine(Environment.CurrentDirectory + @"/wwwroot/Images");
+            string path = @"wwwroot";
             if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);
             }
-
-            string result = $@"{path}\{creatingUniqueFilename}";
+            string result = $@"{path}\{guid}";
 
             return result;
         }
+        public static string newPathForImage(string guid)
+        {
+
+            string result = $@"{guid}";
+
+            return result;
+        }
+        public static string newGuid(IFormFile file)
+        {
+            System.IO.FileInfo ff = new System.IO.FileInfo(file.FileName);
+            string fileExtension = ff.Extension;
+
+            var creatingUniqueFilename = Guid.NewGuid().ToString("N")
+               + "_" + DateTime.Now.Month + "_"
+               + DateTime.Now.Day + "_"
+               + DateTime.Now.Year + fileExtension;
+            return creatingUniqueFilename;
+        }
+
+
+
     }
 }
