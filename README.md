@@ -1,4 +1,4 @@
-# ProductProject
+# Car Rental Backend
 
 Product projesi .Net Core Freamework ve C# kullanılarak kodlanmış bir backend projesidir. Proje katmanlı mimari, SOLID prensipleri kullanılarak oluşturulmuştur.
 
@@ -14,6 +14,16 @@ Product projesi .Net Core Freamework ve C# kullanılarak kodlanmış bir backend
 - **Entities:** Veritabanındaki tablolarımızın projemizde nesne olarak kullanılması için oluşturulmuştur. DTO nesnelerinide barındırmaktadır.
 - **WebAPI:** Prjenin Restful API Katmanıdır. Kullanılan methodlar: Get, Post, Put, Delete
 
+**Single-responsibility principle**
+Bir sınıf (nesne) yalnızca bir amaç uğruna değiştirilebilir, o da o sınıfa yüklenen sorumluluktur, yani bir sınıfın(fonksiyona da indirgenebilir) yapması gereken yalnızca bir işi olması gerekir.
+**Open-closed principle**
+Bir sınıf ya da fonksiyon halihazırda var olan özellikleri korumalı ve değişikliğe izin vermemelidir. Yani davranışını değiştirmiyor olmalı ve yeni özellikler kazanabiliyor olmalıdır.
+**Liskov substitution principle**
+Kodlarımızda herhangi bir değişiklik yapmaya gerek duymadan alt sınıfları, türedikleri(üst) sınıfların yerine kullanabilmeliyiz.
+**Interface segregation principle**
+ Sorumlulukların hepsini tek bir arayüze toplamak yerine daha özelleştirilmiş birden fazla arayüz oluşturmalıyız.
+**Dependency Inversion Principle**
+ Sınıflar arası bağımlılıklar olabildiğince az olmalıdır özellikle üst seviye sınıflar alt seviye sınıflara bağımlı olmamalıdır.
 
 ## Kullanılan Teknolojiler
 - Restful API
