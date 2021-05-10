@@ -20,5 +20,7 @@ namespace Core.DataAccess
         void Add(T entitiy);
         void Delete(T entitiy);
         void Update(T entitiy);
+
+        bool Any(Expression<Func<T, bool>> exp);
     }
 }

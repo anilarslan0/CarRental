@@ -57,5 +57,13 @@ namespace Core.DataAccess.EntityFramework
                 context.SaveChanges();
             }
         }
+
+        public bool Any(Expression<Func<TEntity, bool>> exp)
+        {
+            using (TContext context = new TContext())
+            {
+                return context.Set<TEntity>().Any(exp);
+            }
+        }
     }
 }

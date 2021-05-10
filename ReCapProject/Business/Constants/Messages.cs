@@ -46,5 +46,7 @@ namespace Business.Constants
         public static string UserNotFound = "Kullanıcı bulunamadı";
 
         public static string BrandDeleted = "Kategori Silindi";
+
+        public static string CarIsNotAvaliable = "Araba Kiralamaya Uygun Değil";
     }
 }
