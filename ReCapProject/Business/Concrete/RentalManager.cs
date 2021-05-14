@@ -11,6 +11,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Linq;
 using Core.Utilities.Business;
+using Core.Aspects.Autofac.Caching;
 
 namespace Business.Concrete
 {
@@ -49,7 +50,7 @@ namespace Business.Concrete
             _rentalDal.Delete(rental);
             return new SuccessResult("Kiralık Araç Silindi");
         }
-
+        [CacheAspect]
         public IDataResult<List<Rental>> GetAll()
         {
             return new SuccessDataResult<List<Rental>>(_rentalDal.GetAll());
